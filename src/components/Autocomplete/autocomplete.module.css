@@ -13,6 +13,12 @@
   display: inline;
 }
 
+.refDiv {
+  width: 250px;
+  height: 300px;
+  overflow: scroll;
+}
+
 .inputClass:focus-visible {
   border: 2px solid #205dd8 !important;
   outline: none;
@@ -22,8 +28,8 @@
   font-size: 13px;
   color: white;
   background-color: transparent;
-  width: 94%;
-  padding: 6% 2.5%;
+  width: 230px;
+  padding: 15px 7px;
   border: 2px solid #205dd8;
   border-radius: 10px;
 }
@@ -31,11 +37,11 @@
 .divDownButton {
   border: none;
   z-index: 999;
-  height: 40px;
+  height: 24px;
   width: 25px;
   position: absolute;
-  top: 10%;
-  right: 1%;
+  top: 2px;
+  right: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,7 +56,7 @@
 }
 
 .suggestionsDiv {
-  width: 250px;
+  width: 245px;
   color: white;
   overflow: scroll;
   margin-top: 2px;
@@ -69,7 +75,7 @@
 }
 
 .listItem {
-  padding: 2% 2.5%;
+  padding: 7px 7px;
   font-size: 13px;
   display: inline-block;
   white-space: nowrap;
@@ -82,4 +88,12 @@
 .listItem:hover {
   background-color: #242b3e;
   color: #205dd8;
+}
+
+.suggSelectedDiv {
+  width: 250px;
+  color: white;
+  background-color: transparent;
+  font-size: 13px;
+  padding: 15px 5px;
 }
