@@ -6,7 +6,7 @@ import styles from "./mainView.module.css";
 
 function MainView() {
   const [search, setSearch] = React.useState("");
-  const [suggestions, setSuggestions] = React.useState<any[]>();
+  const [suggestions, setSuggestions] = React.useState<any[]>([]);
   const debouncedFilter = useDebounce<string>(search, 1000);
 
   React.useEffect(() => {
@@ -23,6 +23,7 @@ function MainView() {
         suggestions={suggestions}
         search={search}
         setSearch={setSearch}
+        setSuggestions={setSuggestions}
       />
     </div>
   );
